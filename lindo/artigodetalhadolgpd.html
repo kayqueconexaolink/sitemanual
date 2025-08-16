@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                 <!-- LOGO PEQUENA LÁ DE CIMA DA TAREFA -->
+            <link rel="icon" href="public/logopequena.png" type="image/x-icon">
+<link rel="shortcut icon" href="public/logopequena.png" type="image/x-icon">
+
+    <title>LGPD na Prática - Conexão Link</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos Específicos para o Artigo */
+        .lgpd-article {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .lgpd-hero {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+        
+        .lgpd-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .lgpd-card h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .lgpd-card h2 i {
+            color: var(--secondary);
+        }
+        
+        .lgpd-alert {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .lgpd-alert strong {
+            color: #856404;
+        }
+        
+        .lgpd-checklist {
+            list-style-type: none;
+            margin: 20px 0;
+        }
+        
+        .lgpd-checklist li {
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--medium);
+            position: relative;
+            padding-left: 35px;
+        }
+        
+        .lgpd-checklist li:before {
+            content: "✓";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 15px;
+        }
+        
+        .lgpd-flow {
+            background-color: var(--primary-light);
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .lgpd-flow-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        
+        .lgpd-flow-number {
+            background-color: var(--primary);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <img src="public/Colorida%20PNG.png" alt="Conexão Link" class="logo-img">
+                <span class="logo-text"></span>
+            </a>
+            <div class="nav-buttons">
+                <a href="suporte.html" class="nav-button commercial">
+                    <i class="fas fa-briefcase"></i> Suporte
+                </a>
+                <a href="sac-comercial.html" class="nav-button plans">
+                    <i class="fas fa-tachometer-alt"></i> SAC
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Artigo LGPD -->
+    <div class="lgpd-article">
+        <div class="lgpd-hero">
+            <h1><i class="fas fa-shield-alt"></i> LGPD na Prática</h1>
+            <p>Tudo o que você precisa saber sobre a Lei Geral de Proteção de Dados no setor de telecomunicações</p>
+        </div>
+        
+        <div class="container">
+            <!-- O que é LGPD -->
+            <div class="lgpd-card">
+                <h2><i class="fas fa-info-circle"></i> O que é a LGPD?</h2>
+                <p>A <strong>Lei Geral de Proteção de Dados (Lei 13.709/2018)</strong> é a legislação brasileira que regula o tratamento de dados pessoais. Para empresas de telecomunicações, essa lei é especialmente relevante porque:</p>
+                
+                <ul class="lgpd-checklist">
+                    <li>Dados de tráfego e localização são considerados <strong>dados pessoais sensíveis</strong></li>
+                    <li>Exige transparência no uso dos dados dos clientes</li>
+                    <li>Estabelece multas de até <strong>2% do faturamento</strong> da empresa (limitado a R$ 50 milhões por infração)</li>
+                </ul>
+                
+                <div class="lgpd-alert">
+                    <strong>Por que é importante?</strong> Na Conexão Link, lidamos diariamente com dados de localização, histórico de navegação e informações de pagamento dos clientes - todos protegidos pela LGPD.
+                </div>
+            </div>
+            
+            <!-- Princípios Fundamentais -->
+            <div class="lgpd-card">
+                <h2><i class="fas fa-balance-scale"></i> 10 Princípios da LGPD</h2>
+                
+                <div class="lgpd-flow">
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">1</div>
+                        <div>
+                            <strong>Finalidade</strong>: Dados devem ser coletados para propósitos específicos e legítimos
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">2</div>
+                        <div>
+                            <strong>Adequação</strong>: O tratamento deve ser compatível com a finalidade declarada
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">3</div>
+                        <div>
+                            <strong>Necessidade</strong>: Coletar apenas dados estritamente necessários
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">4</div>
+                        <div>
+                            <strong>Livre Acesso</strong>: Clientes podem consultar seus dados gratuitamente
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">5</div>
+                        <div>
+                            <strong>Qualidade dos Dados</strong>: Informações devem ser precisas e atualizadas
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">6</div>
+                        <div>
+                            <strong>Transparência</strong>: Clientes devem ser informados sobre como seus dados são usados
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">7</div>
+                        <div>
+                            <strong>Segurança</strong>: Implementação de medidas técnicas e administrativas de proteção
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">8</div>
+                        <div>
+                            <strong>Prevenção</strong>: Adotar medidas para prevenir danos
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">9</div>
+                        <div>
+                            <strong>Não Discriminação</strong>: Dados não podem ser usados para fins discriminatórios
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">10</div>
+                        <div>
+                            <strong>Responsabilização</strong>: A empresa deve comprovar a conformidade
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dados na Telecom -->
+            <div class="lgpd-card">
+                <h2><i class="fas fa-database"></i> Quais Dados da Telecom São Protegidos?</h2>
+                <p>Na Conexão Link, tratamos principalmente estes tipos de dados protegidos:</p>
+                
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <thead>
+                            <tr style="background-color: var(--primary); color: white;">
+                                <th style="padding: 12px; text-align: left;">Categoria</th>
+                                <th style="padding: 12px; text-align: left;">Exemplos</th>
+                                <th style="padding: 12px; text-align: left;">Nível de Proteção</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid var(--medium);">
+                                <td style="padding: 12px;">Dados Cadastrais</td>
+                                <td style="padding: 12px;">Nome, CPF, endereço</td>
+                                <td style="padding: 12px;">Alto</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--medium);">
+                                <td style="padding: 12px;">Dados de Tráfego</td>
+                                <td style="padding: 12px;">Histórico de conexão, IPs</td>
+                                <td style="padding: 12px;">Máximo (sensível)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--medium);">
+                                <td style="padding: 12px;">Dados Financeiros</td>
+                                <td style="padding: 12px;">Cartões, boletos</td>
+                                <td style="padding: 12px;">Máximo</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid var(--medium);">
+                                <td style="padding: 12px;">Dados Técnicos</td>
+                                <td style="padding: 12px;">IMEI do dispositivo, MAC</td>
+                                <td style="padding: 12px;">Médio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="lgpd-alert">
+                    <strong>ATENÇÃO:</strong> Dados de localização em tempo real exigem consentimento explícito do cliente!
+                </div>
+            </div>
+            
+            <!-- Boas Práticas -->
+            <div class="lgpd-card">
+                <h2><i class="fas fa-check-circle"></i> Boas Práticas na Conexão Link</h2>
+                <p>Como aplicar a LGPD no dia a dia:</p>
+                
+                <ul class="lgpd-checklist">
+                    <li><strong>Verificar identidade</strong> antes de liberar qualquer informação</li>
+                    <li><strong>Não compartilhar dados</strong> por telefone sem autenticação</li>
+                    <li><strong>Relatar imediatamente</strong> qualquer suspeita de vazamento</li>
+                    <li><strong>Usar apenas sistemas autorizados</strong> para consulta de dados</li>
+                    <li><strong>Não anotar dados sensíveis</strong> em papéis ou arquivos não seguros</li>
+                </ul>
+                
+                <div class="lgpd-flow">
+                    <h3 style="color: var(--primary); margin-top: 0;">Fluxo para Solicitações de Clientes:</h3>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">1</div>
+                        <div>
+                            <strong>Identificação</strong>: Verificar documentos que comprovem a identidade
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">2</div>
+                        <div>
+                            <strong>Registro</strong>: Anotar no sistema a solicitação (direito de acesso, retificação, etc.)
+                        </div>
+                    </div>
+                    
+                    <div class="lgpd-flow-step">
+                        <div class="lgpd-flow-number">3</div>
+                        <div>
+                            <strong>Prazo</strong>: Resposta deve ser dada em até <strong>15 dias</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Dúvidas Frequentes -->
+            <div class="lgpd-card">
+                <h2><i class="fas fa-question-circle"></i> Dúvidas Frequentes</h2>
+                
+                <div style="margin-bottom: 20px;">
+                    <h3 style="color: var(--primary);">Posso enviar dados por WhatsApp?</h3>
+                    <p><strong>Não.</strong> O WhatsApp não é um canal seguro para envio de dados pessoais. Use sempre os sistemas internos autorizados.</p>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <h3 style="color: var(--primary);">E se o cliente pedir para excluir seus dados?</h3>
+                    <p>Encaminhe imediatamente para o setor jurídico. Alguns dados precisam ser mantidos por exigência legal (ex: faturas dos últimos 5 anos).</p>
+                </div>
+                
+                <div>
+                    <h3 style="color: var(--primary);">Onde reportar incidentes?</h3>
+                    <p>Contate imediatamente o <strong>Encarregado de Dados (DPO)</strong>:</p>
+                    <p style="background-color: var(--primary-light); padding: 15px; border-radius: 5px;">
+                        <i class="fas fa-envelope"></i> dpo@conexaolink.com.br<br>
+                        <i class="fas fa-phone"></i> (27) 4042-4240 (Ramal 123)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2023 Conexão Link - Todos os direitos reservados</p>
+                <p>Documento interno - Versão 2.1 - Atualizado em 10/2023</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

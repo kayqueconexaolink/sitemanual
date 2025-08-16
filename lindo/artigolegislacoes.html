@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                 <!-- LOGO PEQUENA LÁ DE CIMA DA TAREFA -->
+            <link rel="icon" href="public/logopequena.png" type="image/x-icon">
+<link rel="shortcut icon" href="public/logopequena.png" type="image/x-icon">
+
+    <title>Guia Legal - Conexão Link</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos específicos para o artigo legal */
+        .legal-article {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .legal-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+        
+        .legal-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .legal-card h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .legal-card h2 i {
+            color: var(--secondary);
+        }
+        
+        .legal-list {
+            list-style-type: none;
+        }
+        
+        .legal-list li {
+            padding: 12px 0;
+            border-bottom: 1px dashed var(--medium);
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .legal-list li:before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 10px;
+            font-size: 24px;
+        }
+        
+        .warning-note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .contact-box {
+            background-color: var(--primary-light);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <img src="public/Colorida%20PNG.png" alt="Conexão Link" class="logo-img">
+                <span class="logo-text"></span>
+            </a>
+            <div class="nav-buttons">
+                <a href="suporte.html" class="nav-button commercial">
+                    <i class="fas fa-briefcase"></i> Suporte
+                </a>
+                <a href="sac-comercial.html" class="nav-button plans">
+                    <i class="fas fa-tachometer-alt"></i> SAC
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Artigo Legal -->
+    <div class="legal-article">
+        <div class="legal-header">
+            <h1><i class="fas fa-gavel"></i> Guia Legal para Telecomunicações</h1>
+            <p>Conheça as principais legislações que regulamentam nosso setor</p>
+        </div>
+        
+        <div class="container">
+            <!-- Lei Geral das Telecomunicações -->
+            <div class="legal-card">
+                <h2><i class="fas fa-book"></i> Lei Geral das Telecomunicações (Lei 9.472/97)</h2>
+                <p>Conhecida como LGT, estabelece as diretrizes para a organização dos serviços de telecomunicações no Brasil:</p>
+                <ul class="legal-list">
+                    <li>Define os princípios da prestação de serviços</li>
+                    <li>Estabelece o regime de autorizações e concessões</li>
+                    <li>Cria a ANATEL como órgão regulador</li>
+                    <li>Regula os direitos e deveres das prestadoras</li>
+                    <li>Disciplina a universalização dos serviços</li>
+                </ul>
+                
+                <div class="warning-note">
+                    <strong>Atenção:</strong> Todo funcionário deve conhecer os artigos 3º (Princípios) e 6º (Direitos dos Usuários) desta lei.
+                </div>
+            </div>
+            
+            <!-- LGPD na Telecom -->
+            <div class="legal-card">
+                <h2><i class="fas fa-shield-alt"></i> LGPD na Telecom (Lei 13.709/2018)</h2>
+                <p>Lei Geral de Proteção de Dados aplicada ao setor de telecomunicações:</p>
+                <ul class="legal-list">
+                    <li>Dados de tráfego são considerados dados pessoais</li>
+                    <li>Consentimento explícito para marketing</li>
+                    <li>Proibição de compartilhamento não autorizado</li>
+                    <li>Direito à portabilidade de dados</li>
+                </ul>
+                
+            </div>
+            
+            <!-- Regulamentos ANATEL -->
+            <div class="legal-card">
+                <h2><i class="fas fa-balance-scale"></i> Principais Regulamentos ANATEL</h2>
+                <p>Normas complementares que detalham a LGT:</p>
+                <ul class="legal-list">
+                    <li><strong>Resolução 632/2014:</strong> Direitos dos consumidores</li>
+                    <li><strong>Resolução 715/2019:</strong> Qualidade da banda larga fixa</li>
+                    <li><strong>Resolução 680/2017:</strong> Procedimentos para suspensão e rescisão</li>
+                    <li><strong>Resolução 614/2013:</strong> Cadastro positivo de telecomunicações</li>
+                    <li><strong>Resolução 740/2022:</strong> Regras para franquia de dados</li>
+                </ul>
+            </div>
+            
+            <!-- Legislação Contratual -->
+            <div class="legal-card">
+                <h2><i class="fas fa-file-contract"></i> Legislação Contratual Relevante</h2>
+                <p>Normas que regulam as relações contratuais:</p>
+                <ul class="legal-list">
+                    <li><strong>Código de Defesa do Consumidor (CDC):</strong> Aplicável a todos os contratos</li>
+                    <li><strong>Lei 8.078/90 (Art. 54):</strong> Contratos de adesão</li>
+                    <li><strong>Decreto 7.962/2013:</strong> Atendimento ao consumidor</li>
+                    <li><strong>Resolução ANATEL 632:</strong> Prazos máximos para atendimento</li>
+                </ul>
+            </div>
+            
+            <!-- Normas de Acessibilidade -->
+            <div class="legal-card">
+                <h2><i class="fas fa-universal-access"></i> Normas de Acessibilidade</h2>
+                <p>Legislação específica para atendimento inclusivo:</p>
+                <ul class="legal-list">
+                    <li><strong>Lei 10.098/2000:</strong> Acessibilidade nas comunicações</li>
+                    <li><strong>Decreto 5.296/2004:</strong> Prioridade no atendimento</li>
+                    <li><strong>Resolução ANATEL 667/2015:</strong> Acessibilidade em serviços de telecom</li>
+                    <li><strong>Lei 13.146/2015 (Estatuto da Pessoa com Deficiência):</strong> Artigos 63 a 67</li>
+                </ul>
+            </div>
+            
+            <!-- Infrações e Penalidades -->
+            <div class="legal-card">
+                <h2><i class="fas fa-exclamation-triangle"></i> Infrações e Penalidades</h2>
+                <p>Principais sanções aplicáveis pelo descumprimento:</p>
+                <ul class="legal-list">
+                    <li><strong>Multas:</strong> Podem chegar a R$ 50 milhões</li>
+                    <li><strong>Suspensão:</strong> De autorizações para operar</li>
+                    <li><strong>Indenizações:</strong> Por danos morais coletivos</li>
+                    <li><strong>Proibição:</strong> De participar de licitações</li>
+                </ul>
+                
+                <div class="warning-note">
+                    <strong>Dica:</strong> Consulte sempre o Manual de Compliance da Conexão Link antes de tomar decisões que possam ter impacto regulatório.
+                </div>
+            </div>
+            
+            <!-- Contatos Úteis -->
+            <div class="legal-card">
+                <h2><i class="fas fa-address-book"></i> Contatos Úteis</h2>
+                <div class="contact-box">
+                    <h3><i class="fas fa-headset"></i> Setor Responsável da Conexão Link</h3>
+                    <p><strong>E-mail:</strong> sac@conexaolink.com.br</p>
+                    <p><strong>Telefone:</strong> (27) 4042-4240</p>
+                    
+                    <h3 style="margin-top: 20px;"><i class="fas fa-external-link-alt"></i> Links Oficiais</h3>
+                    <ul class="legal-list">
+                        <li><a href="https://www.anatel.gov.br" target="_blank">Site Oficial da ANATEL</a></li>
+                        <li><a href="https://www.gov.br/anatel/pt-br/assuntos/regulados" target="_blank">Regulamentos ANATEL</a></li>
+                        <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm" target="_blank">Código de Defesa do Consumidor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 Conexão Link - Todos os direitos reservados</p>
+                <p>Documento interno - Versão 1.0 - Atualizado em 08/2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

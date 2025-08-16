@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                 <!-- LOGO PEQUENA LÁ DE CIMA DA TAREFA -->
+            <link rel="icon" href="public/logopequena.png" type="image/x-icon">
+<link rel="shortcut icon" href="public/logopequena.png" type="image/x-icon">
+
+    <title>Checklist Técnico | Conexão Link</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0066cc;
+            --primary-dark: #004080;
+            --primary-light: #e6f2ff;
+            --secondary: #00a859;
+            --secondary-dark: #008744;
+            --secondary-light: #e6f7ef;
+            --white: #ffffff;
+            --light: #f8f9fa;
+            --medium: #e9ecef;
+            --dark: #212529;
+            --gray: #6c757d;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            color: var(--primary);
+            font-size: 28px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-button {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+        }
+        
+        .nav-button.support {
+            background-color: var(--white);
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        /* Checklist Content */
+        .checklist-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .checklist-sidebar {
+            width: 280px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 100px;
+            align-self: flex-start;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+        }
+        
+        .checklist-content {
+            flex-grow: 1;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        .sidebar-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+        
+        .sidebar-menu {
+            list-style: none;
+        }
+        
+        .sidebar-menu li {
+            margin-bottom: 10px;
+        }
+        
+        .sidebar-menu a {
+            display: block;
+            padding: 8px 10px;
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        
+        .sidebar-menu a:hover, .sidebar-menu a.active {
+            background-color: var(--primary-light);
+            color: var(--primary);
+        }
+        
+        .sidebar-menu i {
+            width: 20px;
+            text-align: center;
+            margin-right: 8px;
+        }
+        
+        .section-title {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--primary-light);
+        }
+        
+        .section-title h2 {
+            font-size: 28px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Checklist Items */
+        .checklist-step {
+            margin-bottom: 40px;
+            background-color: var(--light);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+        }
+        
+        .step-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-title {
+            font-size: 22px;
+            color: var(--primary-dark);
+            margin: 0;
+        }
+        
+        .checklist-items {
+            margin-top: 15px;
+        }
+        
+        .checklist-item {
+            padding: 12px 0;
+            position: relative;
+            padding-left: 35px;
+            border-bottom: 1px dashed var(--medium);
+        }
+        
+        .checklist-item:before {
+            content: "•";
+            color: var(--secondary);
+            font-weight: bold;
+            position: absolute;
+            left: 15px;
+            font-size: 24px;
+            line-height: 1;
+        }
+        
+        .sub-items {
+            margin-left: 20px;
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 2px solid var(--light-blue);
+        }
+        
+        .sub-item {
+            padding: 8px 0;
+            position: relative;
+            color: var(--gray);
+        }
+        
+        .sub-item:before {
+            content: "→";
+            color: var(--secondary);
+            position: absolute;
+            left: -15px;
+        }
+        
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .warning-box strong {
+            color: #856404;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .divider {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--primary), transparent);
+            margin: 30px 0;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 992px) {
+            .checklist-container {
+                flex-direction: column;
+            }
+            
+            .checklist-sidebar {
+                width: 100%;
+                position: static;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .nav-buttons {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .step-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .step-number {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fas fa-wifi"></i></span>
+                <span class="logo-text">Conexão Link</span>
+            </a>
+            <div class="nav-buttons">
+                <a href="suporte.html" class="nav-button support">
+                    <i class="fas fa-arrow-left"></i> Voltar para Manuais
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Checklist Técnico - Problemas de Conexão</h1>
+            <p>Protocolo padronizado para atendimento a lentidão e quedas na fibra óptica</p>
+        </div>
+    </section>
+
+    <!-- Checklist Content -->
+    <div class="container checklist-container">
+        <!-- Sidebar -->
+        <aside class="checklist-sidebar">
+            <h3 class="sidebar-title"><i class="fas fa-list-check"></i> Índice Rápido</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#passo1"><i class="fas fa-magnifying-glass"></i> 1. Coleta de Informações</a></li>
+                <li><a href="#passo2"><i class="fas fa-flask"></i> 2. Testes Iniciais</a></li>
+                <li><a href="#passo3"><i class="fas fa-server"></i> 3. Ajuste de DNS</a></li>
+                <li><a href="#passo4"><i class="fas fa-wifi"></i> 4. Otimização Wi-Fi</a></li>
+                <li><a href="#passo5"><i class="fas fa-flag-checkered"></i> 5. Encaminhamentos</a></li>
+            </ul>
+            
+            <h3 class="sidebar-title" style="margin-top: 30px;"><i class="fas fa-phone-volume"></i> Contatos Rápidos</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#"><i class="fas fa-truck"></i> Supervisor de Instalações</a></li>
+                <li><a href="#"><i class="fas fa-tools"></i> Supervisor de Reparos</a></li>
+                <li><a href="#"><i class="fas fa-headset"></i> NOC (Plantão 24h)</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="checklist-content">
+            <!-- Passo 1 -->
+            <section id="passo1">
+                <div class="checklist-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <h2 class="step-title">Coleta Inicial de Informações</h2>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item">Nome completo e número de contrato/CPF do cliente</div>
+                        <div class="checklist-item">Tipo de equipamento:
+                            <div class="sub-items">
+                                <div class="sub-item">ONT Intelbras</div>
+                                <div class="sub-item">ONU Cianet</div>
+                                <div class="sub-item">Roteador adicional</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Plano contratado (ex.: 500 Mb, 700 Mb, 1 Gb)</div>
+                        <div class="checklist-item">Como o problema se manifesta:
+                            <div class="sub-items">
+                                <div class="sub-item">Apenas no Wi-Fi ou também via cabo?</div>
+                                <div class="sub-item">Ocorre constantemente ou em horários específicos?</div>
+                                <div class="sub-item">Queda total ou apenas lentidão?</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Tipo de uso durante as falhas:
+                            <div class="sub-items">
+                                <div class="sub-item">Streaming (qual plataforma?)</div>
+                                <div class="sub-item">Jogos online</div>
+                                <div class="sub-item">Videochamadas</div>
+                                <div class="sub-item">Downloads grandes</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Número aproximado de dispositivos conectados simultaneamente</div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="divider">
+            
+            <!-- Passo 2 -->
+            <section id="passo2">
+                <div class="checklist-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <h2 class="step-title">Testes Rápidos no Atendimento</h2>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item">Verificar status da fibra no sistema IXC:
+                            <div class="sub-items">
+                                <div class="sub-item">Nível de sinal óptico (ideal: -8dBm a -27dBm)</div>
+                                <div class="sub-item">Status de autorização da ONT</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Inspeção física dos cabos:
+                            <div class="sub-items">
+                                <div class="sub-item">Patch cord bem conectado</div>
+                                <div class="sub-item">Conector SC/APC limpo e sem danos</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Teste via cabo Ethernet:
+                            <div class="sub-items">
+                                <div class="sub-item">Conectar computador diretamente à ONT</div>
+                                <div class="sub-item">Verificar estabilidade da conexão</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Medição de velocidade:
+                            <div class="sub-items">
+                                <div class="sub-item">Usar servidor próximo no Speedtest</div>
+                                <div class="sub-item">Comparar com pelo menos 80% do plano contratado</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Testar em múltiplos dispositivos:
+                            <div class="sub-items">
+                                <div class="sub-item">Celular e computador</div>
+                                <div class="sub-item">Diferentes navegadores</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="divider">
+            
+            <!-- Passo 3 -->
+            <section id="passo3">
+                <div class="checklist-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <h2 class="step-title">Cenários para Troca de DNS</h2>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item">A troca para DNS 8.8.8.8 / 8.8.4.4 (Google) é recomendada quando:</div>
+                        <div class="sub-items">
+                            <div class="sub-item">Sites específicos não carregam ou demoram muito</div>
+                            <div class="sub-item">Há instabilidade na resolução de nomes</div>
+                            <div class="sub-item">Problemas intermitentes com serviços específicos (streaming, apps)</div>
+                            <div class="sub-item">Bloqueios temporários ou propagação lenta de novos sites</div>
+                        </div>
+                        
+                        <div class="warning-box">
+                            <strong><i class="fas fa-exclamation-triangle"></i> Limitações da troca de DNS:</strong>
+                            <div class="checklist-item">Não reduz ping alto em jogos (problema de rota)</div>
+                            <div class="checklist-item">Não corrige perda de pacotes</div>
+                            <div class="checklist-item">Não resolve saturação do Wi-Fi</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="divider">
+            
+            <!-- Passo 4 -->
+            <section id="passo4">
+                <div class="checklist-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <h2 class="step-title">Otimização de Rede Wi-Fi</h2>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item">Seleção de canal:
+                            <div class="sub-items">
+                                <div class="sub-item">Usar app WiFi Analyzer para identificar canais congestionados</div>
+                                <div class="sub-item">2.4GHz: Canais 1, 6 ou 11 (evitar sobreposição)</div>
+                                <div class="sub-item">5GHz: Escolher canal com menos interferência</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Configuração de banda:
+                            <div class="sub-items">
+                                <div class="sub-item">2.4GHz para maior alcance (dispositivos distantes)</div>
+                                <div class="sub-item">5GHz para maior velocidade (perto do roteador)</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Posicionamento do equipamento:
+                            <div class="sub-items">
+                                <div class="sub-item">Elevado e centralizado</div>
+                                <div class="sub-item">Longe de obstáculos e interferências (micro-ondas, telefones sem fio)</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Atualização de firmware do roteador</div>
+                    </div>
+                </div>
+            </section>
+            
+            <hr class="divider">
+            
+            <!-- Passo 5 -->
+            <section id="passo5">
+                <div class="checklist-step">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <h2 class="step-title">Encaminhamentos Finais</h2>
+                    </div>
+                    
+                    <div class="checklist-items">
+                        <div class="checklist-item">Se os testes via cabo forem satisfatórios:
+                            <div class="sub-items">
+                                <div class="sub-item">Focar em otimização Wi-Fi</div>
+                                <div class="sub-item">Sugerir extensor de sinal se necessário</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Se problemas persistirem via cabo:
+                            <div class="sub-items">
+                                <div class="sub-item">Abrir OS para análise técnica no campo</div>
+                                <div class="sub-item">Verificar necessidade de troca de ONT/ONU</div>
+                            </div>
+                        </div>
+                        <div class="checklist-item">Registro completo no sistema:
+                            <div class="sub-items">
+                                <div class="sub-item">Todos os testes realizados</div>
+                                <div class="sub-item">Resultados obtidos</div>
+                                <div class="sub-item">Ações tomadas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="suporte.html" class="nav-button support">
+                    <i class="fas fa-arrow-left"></i> Voltar para Manuais
+                </a>
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Conexão Link - Manual Interno v2.0</p>
+            <p>Última atualização: 15/11/2023</p>
+        </div>
+    </footer>
+</body>
+</html>

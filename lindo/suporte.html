@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+                 <!-- LOGO PEQUENA LÁ DE CIMA DA TAREFA -->
+            <link rel="icon" href="public/logopequena.png" type="image/x-icon">
+<link rel="shortcut icon" href="public/logopequena.png" type="image/x-icon">
+
+    <title>Manual Interno - Suporte Técnico | Conexão Link</title>
+    <link rel="stylesheet" href="styles/suporte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+
+        
+        <!-- LOGO EDITAVEL APENAS NO DASHBOARD.CSS -->
+            <img src="public/Colorida%20PNG.png" 
+                 alt="Conexão Link" 
+                 class="logo-img"
+                 width="" 
+                 height="">
+            <span class="logo-text"></span>
+
+            
+            <!-- BOTÕES, FAVOR NÃO MEXER -->
+            <div class="nav-buttons">
+                <a href="dashboard.html" class="nav-button commercial">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="https://chat.whatsapp.com/JqneOOakreX5AG8ZHlE1W3" class="nav-button plans">
+                    <i class="fas fa-phone-alt"></i> Dúvidas?
+                </a>
+                <a href="leistec.html" class="nav-button manuals">
+                    <i class="fas fa-book"></i> Legislação
+                </a>
+                <a href="dashboard.html" class="nav-button support">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Manual do Suporte Técnico</h1>
+            <p>Tudo que sua equipe precisa saber para oferecer o melhor atendimento</p>
+        </div>
+    </section>
+
+    <!-- Manual Content -->
+    <div class="container manual-container">
+        <!-- Sidebar -->
+        <aside class="manual-sidebar">
+            <h3 class="sidebar-title"><i class="fas fa-book-open"></i> Índice</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#introducao" class="active"><i class="fas fa-info-circle"></i> Introdução</a></li>
+                <li><a href="#protocolos"><i class="fas fa-list-ol"></i> Protocolos de Atendimento</a></li>
+                <li><a href="#procedimentos"><i class="fas fa-tasks"></i> Procedimentos Técnicos</a></li>
+                <li><a href="#roteadores"><i class="fas fa-globe"></i> Configuração de Roteadores</a></li>
+                <li><a href="guiarapido.html"><i class="fas fa-search"></i> Diagnóstico de Problemas</a></li>
+                <li><a href="#planos"><i class="fas fa-file-invoice-dollar"></i> Planos e Produtos</a></li>
+                <li><a href="#sistemas"><i class="fas fa-desktop"></i> Sistemas Internos</a></li>
+                <li><a href="#contatos"><i class="fas fa-address-book"></i> Contatos Importantes</a></li>
+                <li><a href="#trilha"><i class="fas fa-road"></i> Trilha do Suporte</a></li>                
+                <li><a href="glossario.html"><i class="fas fa-book"></i> Glossário Técnico</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="manual-content">
+            <!-- Introdução -->
+            <section id="introducao">
+                <div class="section-title">
+                    <h2><i class="fas fa-info-circle"></i> Introdução</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-bullseye"></i> Objetivo deste Manual</h3>
+                    <p>Este manual tem como objetivo padronizar os procedimentos do setor de suporte técnico da Conexão Link, garantindo atendimento de excelência aos nossos clientes.</p>
+                    
+                    <div class="info-card">
+                        <h4>Público-alvo</h4>
+                        <p>Técnicos de suporte, analistas de atendimento e qualquer colaborador que interaja diretamente com clientes para solução de problemas técnicos.</p>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-chart-line"></i> Métricas de Qualidade</h3>
+                    <p>Nossos principais indicadores de desempenho:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Indicador</th>
+                                <th>Meta</th>
+                                <th>Periodicidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TMA (Tempo Médio de Atendimento)</td>
+                                <td>≤ 8 minutos</td>
+                                <td>Diário</td>
+                            </tr>
+                            <tr>
+                                <td>TME (Tempo Médio de Espera)</td>
+                                <td>≤ 2 minutos</td>
+                                <td>Diário</td>
+                            </tr>
+                            <tr>
+                                <td>NPS (Net Promoter Score)</td>
+                                <td>≥ 80</td>
+                                <td>Mensal</td>
+                            </tr>
+                            <tr>
+                                <td>Resolução na Primeira Chamada</td>
+                                <td>≥ 85%</td>
+                                <td>Semanal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Protocolos de Atendimento -->
+            <section id="protocolos">
+                <div class="section-title">
+                    <h2><i class="fas fa-list-ol"></i> Protocolos de Atendimento</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-headset"></i> Fluxo Padrão de Atendimento</h3>
+                    
+                    <ol class="step-list">
+                        <li><strong>Saudação:</strong> "Bom dia/tarde/noite, Conexão Link, [seu nome] falando. Como posso ajudar?"</li>
+                        <li><strong>Identificação:</strong> Confirmar nome completo do cliente e número de contrato/CPF</li>
+                        <li><strong>Empatia:</strong> Demonstrar compreensão pelo problema relatado</li>
+                        <li><strong>Diagnóstico:</strong> Questionar para identificar a natureza do problema</li>
+                        <li><strong>Solução:</strong> Aplicar procedimentos técnicos adequados</li>
+                        <li><strong>Validação:</strong> Confirmar se o problema foi resolvido</li>
+                        <li><strong>Encerramento:</strong> Oferecer ajuda adicional e se despedir</li>
+                    </ol>
+                    
+                    <div class="info-card warning">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Atenção</h4>
+                        <p>Nunca interrompa o cliente durante a descrição do problema. Espere ele concluir antes de iniciar o diagnóstico.</p>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-user-tie"></i> Atendimento a Clientes Especiais</h3>
+                    
+                    <h4>Clientes PCD</h4>
+                    <ul>
+                        <li>Oferecer atendimento prioritário</li>
+                        <li>Adaptar a linguagem conforme necessidade (ex: falar mais pausadamente para deficientes auditivos)</li>
+                        <li>Disponibilizar canal alternativo (WhatsApp ou e-mail) quando necessário</li>
+                    </ul>
+                    
+                    <h4>Clientes Idosos</h4>
+                    <ul>
+                        <li>Utilizar linguagem simples, sem jargões técnicos</li>
+                        <li>Repetir informações importantes</li>
+                        <li>Oferecer para enviar instruções por e-mail ou SMS</li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- Procedimentos Técnicos -->
+            <section id="procedimentos">
+                <div class="section-title">
+                    <h2><i class="fas fa-tasks"></i> Procedimentos Técnicos</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-wifi"></i> Problemas Comuns de Conexão</h3>
+                    
+                    <h4>Sem conexão (LED vermelho no modem)</h4>
+                    <ol class="step-list">
+                        <li>Verificar se há queda na região (consultar sistema OTRS)</li>
+                        <li>Pedir para cliente verificar cabos de alimentação e rede</li>
+                        <li>Solicitar reinicialização do equipamento (desligar por 30 segundos)</li>
+                        <li>Verificar se o MAC está corretamente registrado no sistema</li>
+                        <li>Caso persista, escalar para IXC com ordem de serviço detalhada</li>
+                    </ol>
+                    
+                    <h4>Conexão lenta/intermitente</h4>
+                    <ol class="step-list">
+                        <li>Pedir para cliente testar via cabo (eliminar problema Wi-Fi)</li>
+                        <li>Solicitar teste no <a href="https://www.speedtest.net/pt" target="_blank">speedtest</a></li>
+                        <li>Verificar potência da fibra no IXC</li>
+                        <li>Analisar histórico de consumo do cliente</li>
+                        <li>Orientar sobre interferências Wi-Fi (canal congestionado, dispositivos próximos)</li>
+                    </ol>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-tools"></i> Procedimentos Avançados</h3>
+                    
+                    <div class="info-card important">
+                        <h4><i class="fas fa-exclamation-circle"></i> Cuidado</h4>
+                        <p>Preste bastante atenção na hora de fazer esse procedimento</p>
+                    </div>
+                    
+                    
+                    <!-- TRILHA DE SUPORTE ADICIONADA AQUI -->
+                     <section id="trilha"></section>
+                    <div class="support-track">
+                        <h3><i class="fas fa-road"></i> Trilha do Suporte</h3>
+
+                        <div class="track-step">
+                            <h4>AUTORIZAR ONT/ONU:</h4>
+                            <ol class="step-list">
+                                <li>PROVEDOR > AUTORIZAR ONUs > CONSULTAR TODAS</li>
+                                <li>LOCALIZAR O EQUIPAMENTO INFORMADO PELO TÉCNICO NA COLUNA 'MAC/SERIAL'</li>
+                                <li>SELECIONAR E CLICAR EM 'AUTORIZAR ONU'</li>
+                                <li>PREENCHER AS INFORMAÇÕES DO CLIENTE NOS CAMPOS: CONTRATO E LOGIN</li>
+                                <li>CLICAR EM SALVAR</li>
+                                <li>CASO DÊ ERRO 'LOGIN JÁ POSSUI PERFIL FIBRA' VEJA MAIS ABAIXO, SE NÃO:</li>
+                                <li>INTEGRAÇÃO OLT > GRAVAR NO DISPOSITIVO</li>
+                                <li>AGUARDAR A TELA DE CONFIRMAÇÃO (RETORNO VERDE = SUCESSO)</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="error-solution">
+                            <h4><i class="fas fa-bug"></i> ERRO: LOGIN JÁ POSSUI PERFIL FIBRA</h4>
+                            <ol>
+                                <li>IR NO CADASTRO DO CLIENTE > LOGIN > FIBRA</li>
+                                <li>SELECIONAR A ONT CADASTRADA > EDITAR</li>
+                                <li>INTEGRAÇÃO OLT > EXCLUIR DISPOSITIVO</li>
+                                <li>AGUARDAR TELA DE CONFIRMAÇÃO</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="situations">
+                            <h4><i class="fas fa-random"></i> Situações Possíveis:</h4>
+                            <div class="situation success">
+                                <i class="fas fa-check-circle"></i> <strong>RETORNO VERDE:</strong> Deu tudo certo!
+                            </div>
+                            <div class="situation error">
+                                <i class="fas fa-times-circle"></i> <strong>RETORNO VERMELHO:</strong>
+                                <ol class="step-list"></ol>
+                                    <li>DELETAR > REFAÇA O PROCESSO DE AUTORIZAÇÃO NOVAMENTE</li>
+                                    <li>SE PERSISTIR: PEGAR INFORMAÇÕES EXIBIDAS (SLOT: X PON: X ONU: X)</li>
+                                    <li>ALTERAR NOS CAMPOS PON ID: 0/X/X (SLOT/PON)</li>
+                                    <li>CORRIGIR 'ONU NUMERO' SE NECESSÁRIO</li>
+                                    <li>IR EM INFORMAÇÕES > EDITAR SLOT E PON N > SALVAR</li>
+                                    <li>INTEGRAÇÃO OLT > EXCLUIR DISPOSITIVO</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-guide">
+                            <h4><i class="fas fa-lightbulb"></i> Guia Rápido:</h4>
+                            <ul>
+                                <li><strong>LIMPAR MAC:</strong> CADASTRO > LOGIN > LIMPAR MAC (em toda troca de equipamento)</li>
+                                <li><strong>CLIENTE NÃO APARECE NO FIBRA:</strong> PROVEDOR > CLIENTES FIBRA > PREENCHER LOGIN</li>
+                                <li><strong>ATUALIZAÇÃO FIRMWARE:</strong> SALVAR PPPoe > SALVAR WIFI > ADMIN > ATUALIZAR FIRMWARE (1200/121)</li>
+                                <li><strong>REAGENDAMENTO:</strong> OS > AÇÕES > MARCAR REAGENDAMENTO</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mac-reference">
+                            <h4><i class="fas fa-network-wired"></i> Referência de MACs:</h4>
+                            <ul>
+                                <li><strong>00:19</strong> - CIANET</li>
+                                <li><strong>F1 ou 5F</strong> no meio - INTELBRAS</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="useful-links">
+                            <h4><i class="fas fa-link"></i> Links Úteis:</h4>
+                            <ul>
+                                <li><a href="https://macvendors.com/" target="_blank">MAC SEARCH</a> (consultar fabricante pelo MAC)</li>
+                                <li><a href="https://teste.conexaolinkes.com.br/results/stats.php" target="_blank">TESTE DE CONEXÃO INTERNO</a> (Senha: 50MD80VP)</li>
+                            </ul>
+                            <div class="warning">
+                                <i class="fas fa-exclamation-triangle"></i> NÃO COMPARTILHAR ESTE LINK COM CLIENTES
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- CSS da TRILHA DO SUPORTE/PREGUIÇA DE FAZER UMA SÓ PRA ISSO -->
+            <style>
+                .support-track {
+                    background: var(--primary-light);
+                    border-radius: 8px;
+                    padding: 25px;
+                    margin-top: 30px;
+                    border-left: 4px solid var(--secondary);
+                }
+                
+                .back-link {
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    color: var(--primary);
+                    text-decoration: none;
+                }
+                
+                .track-step, .error-solution {
+                    margin-bottom: 25px;
+                    padding-bottom: 15px;
+                    border-bottom: 1px dashed var(--medium);
+                }
+                
+                .track-list li, .error-solution ol li {
+                    margin-bottom: 8px;
+                    position: relative;
+                    padding-left: 25px;
+                }
+                
+                .track-list li:before, .error-solution ol li:before {
+                    content: "→";
+                    position: absolute;
+                    left: 0;
+                    color: var(--secondary);
+                }
+                
+                .situations {
+                    margin: 25px 0;
+                }
+                
+                .situation {
+                    padding: 14px;
+                    border-radius: 6px;
+                    margin-bottom: 10px;
+                }
+                
+                .situation.success {
+                    background-color: rgba(0, 168, 89, 0.1);
+                    border-left: 4px solid var(--secondary);
+                }
+                
+                .situation.error {
+                    background-color: rgba(220, 53, 69, 0.1);
+                    border-left: 4px solid #dc3545;
+                }
+                
+                .quick-guide ul {
+  list-style-type: none;
+  padding-left: 5px;
+  margin-top: 15px;
+}
+
+.quick-guide li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.quick-guide li::before {
+  content: "•"; /* Ou use → para setas */
+  color: var(--secondary); /* Cor verde do seu tema */
+  font-size: 24px;
+  position: absolute;
+  left: 5px;
+  top: -2px;
+}
+
+/* Se preferir ícones Font Awesome */
+.quick-guide li::before {
+  content: "\f054"; /* Ícone de seta */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 14px;
+  top: 3px;
+}
+            </style>
+
+
+
+
+            <!-- Configuração de Roteadores -->
+            <section id="roteadores">
+                <div class="section-title">
+                    <h2><i class="fas fa-router"></i> Configuração de Roteadores</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-network-wired"></i> Modelos</h3>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Modelo</th>
+                                <th>Acesso</th>
+                                <th>Usuário Padrão</th>
+                                <th>Senha Padrão</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Intelbras Wifiber 1200R</td>
+                                <td>192.168.1.1</td>
+                                <td>admin</td>
+                                <td>C0n3x40.</td>
+                            </tr>
+                            <tr>
+                                <td>Cianet HW01N</td>
+                                <td>192.168.0.1</td>
+                                <td>adminisp</td>
+                                <td>C0n3x40.</td>
+                            </tr>
+                            <tr>
+                                <td>Intelbras RF 301K</td>
+                                <td>10.0.0.1</td>
+                                <td>admin</td>
+                                <td>intelbras</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-key"></i> Alteração de Senha Wi-Fi</h3>
+                    
+                    <h4>Passo a passo:</h4>
+                    <ol class="step-list">
+                        <li>Acessar interface do roteador (ver tabela acima)</li>
+                        <li>Navegar até Interfaces WLAN > Wifi > Editar Rede Wifi</li>
+                        <li>Selecionar WPA2 como método de segurança</li>
+                        <li>Definir senha com pelo menos 8 caracteres (letras, números e símbolos)</li>
+                        <li>Evitar sequências óbvias ou dados pessoais</li>
+                        <li>Salvar configurações e reiniciar o equipamento</li>
+                    </ol>
+                    
+                    <div class="info-card success">
+                        <h4><i class="fas fa-lightbulb"></i> Dica</h4>
+                        <p>Sugira ao cliente senhas fáceis de lembrar mas difíceis de adivinhar, como "MinhaCasa@2023" ou "FlamengoCampeao#22".</p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Contatos Importantes -->
+            <section id="contatos">
+                <div class="section-title">
+                    <h2><i class="fas fa-address-book"></i> Contatos Importantes</h2>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h4><i class="fas fa-truck"></i> Supervisor de Instalação</h4>
+                        <p><strong>Responsável:</strong> Marcelo Luiz</p>
+                        <p><strong>Ramal:</strong> 0</p>
+                        <p><strong>Celular:</strong> (27) 99254-3879</p>
+                        <p><strong>Email:</strong> marceloluiz@grupolink.com.br</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4><i class="fas fa-server"></i> Supervisor de Reparos</h4>
+                        <p><strong>Responsável:</strong> André Tozi</p>
+                        <p><strong>Telefone:</strong> (27) 99875-0201</p>
+                        <p><strong>Email Urgente:</strong> toziandree@gmail.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4><i class="fas fa-user-shield"></i> Supervisor Administrativo</h4>
+                        <p><strong>Responsável:</strong> Kayque Gomes Correia</p>
+                        <p><strong>Ramal:</strong> 0</p>
+                        <p><strong>Email:</strong> kayquegomes@conexaolinkes.com.br</p>
+                        <p><strong>Celular:</strong> (27) 98115-4966</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h4><i class="fas fa-file-invoice"></i> Recursos Humanos</h4>
+                        <p><strong>Responsável:</strong> Indiaria Assunção</p>
+                        <p><strong>Telefone Empresarial:</strong> (27) 3442-6331</p>
+                        <p><strong>Email:</strong> indiaria@conexaolinkes.com.br</p>
+                        <p><strong>Telefone de Emergência:</strong> (27) 99604-0783</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

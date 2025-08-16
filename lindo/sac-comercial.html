@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                 <!-- LOGO PEQUENA LÁ DE CIMA DA TAREFA -->
+            <link rel="icon" href="public/logopequena.png" type="image/x-icon">
+<link rel="shortcut icon" href="public/logopequena.png" type="image/x-icon">
+
+    <title>Manual SAC | Conexão Link</title>
+    <link rel="stylesheet" href="styles/sac-comercial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        
+
+            <!-- BOTÕES PRINCIPAIS -->
+            <div class="nav-buttons">
+                <a href="dashboard.html" class="nav-button commercial">
+                    <i class="fas fa-home"></i> Dashboard
+                </a>
+                <a href="https://chat.whatsapp.com/BloUaPjSoF8LBequn0sFQQ" class="nav-button plans">
+                    <i class="fas fa-phone-alt"></i> Dúvidas?
+                </a>
+                <a href="leistec.html" class="nav-button manuals">
+                    <i class="fas fa-book"></i> Legislação
+                </a>
+                <a href="dashboard.html" class="nav-button support">
+                    <i class="fas fa-sign-out-alt"></i> Sair
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Serviço de Atendimento ao Cliente</h1>
+            <p>Procedimentos para atendimento ao cliente e gestão de contratos</p>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Manual Content -->
+    <div class="container manual-container">
+        <!-- Sidebar -->
+        <aside class="manual-sidebar">
+            <h3 class="sidebar-title"><i class="fas fa-book-open"></i> Índice</h3>
+            <ul class="sidebar-menu">
+                <li><a href="#introducao" class="active"><i class="fas fa-info-circle"></i> Introdução</a></li>
+                <li><a href="#cancelamento"><i class="fas fa-file-contract"></i> Cancelamento de Contrato</a></li>
+                <li><a href="#segundavia"><i class="fas fa-barcode"></i> 2ª Via de Boleto</a></li>
+                <li><a href="#titularidade"><i class="fas fa-exchange-alt"></i> Mudança de Titularidade</a></li>
+                <li><a href="#contatos"><i class="fas fa-address-book"></i> Contatos Importantes</a></li>
+                <li><a href="#contatos"><i class="fas fa-search"></i> Suspensão de Contrato</a></li>
+                <li><a href="#contatos"><i class="fa-solid fa-envelope"></i> SVA's</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="manual-content">
+            <!-- Introdução -->
+            <section id="introducao">
+                <div class="section-title">
+                    <h2><i class="fas fa-info-circle"></i> Introdução</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-bullseye"></i> Objetivo deste Manual</h3>
+                    <p>Este manual fornece diretrizes para atendimento SAC, procedimentos comerciais e financeiros da Conexão Link.</p>
+                    
+                    <div class="info-card">
+                        <h4>Público-alvo</h4>
+                        <p>Atendentes SAC, analistas comerciais e financeiros que interagem diretamente com clientes.</p>
+                    </div>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-chart-line"></i> Métricas de Qualidade</h3>
+                    <p>Indicadores de desempenho para equipe SAC:</p>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Indicador</th>
+                                <th>Meta</th>
+                                <th>Periodicidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>TMA (Tempo Médio de Atendimento)</td>
+                                <td>≤ 5 minutos</td>
+                                <td>Diário</td>
+                            </tr>
+                            <tr>
+                                <td>Resolução na Primeira Chamada</td>
+                                <td>≥ 90%</td>
+                                <td>Semanal</td>
+                            </tr>
+                            <tr>
+                                <td>Satisfação do Cliente (NPS)</td>
+                                <td>≥ 85</td>
+                                <td>Mensal</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Cancelamento de Contrato -->
+            <section id="cancelamento">
+                <div class="section-title">
+                    <h2><i class="fas fa-file-contract"></i> Cancelamento de Contrato</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-ban"></i> Fluxo de Cancelamento</h3>
+                    
+                    <ol class="step-list">
+                        <li><strong>Acesso ao Contrato:</strong> Localizar o contrato do cliente no sistema IXC</li>
+                        <li><strong>Iniciar Cancelamento:</strong> Clicar em <strong>Cancel/Negat/Desist</strong></li>
+                        <li>Copiar SERIAL MAC do cliente e colocar na aba <strong>"OBSERVAÇÕES"</strong> no cadastro. </li>
+                        <li><strong>Efetuar desautorização:</strong> Provedor -> Clientes Fibra (ONU) -> Encontrar Cliente -> Desautorizar ONU -> Deletar </strong></li>
+                        <li><strong>Motivo:</strong> Selecionar o motivo do cancelamento conforme cenário:
+                            <ul>
+                                <li>Desistiu (pré-acordo)</li>
+                                <li>Cancelar contrato (sem faturas futuras)</li>
+                                <li>Cancelar e gerar financeiro remanescente (faturas vencidas)</li>
+                                <li>Cancelar e gerar financeiro não vencido (proporcional)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Descrição:</strong> Inserir resumo da solicitação e informações relevantes</li>
+                        <li><strong>Salvar:</strong> Confirmar a operação no sistema</li>
+                        
+                    </ol>
+                    
+                    <div class="info-card important">
+                        <h4><i class="fas fa-exclamation-circle"></i> Cálculo Proporcional</h4>
+                        <p>Para faturas não vencidas, o sistema calcula os dias utilizados desde o último vencimento até a data do cancelamento, gerando um boleto avulso com o valor proporcional.</p>
+                    </div>
+                    
+                    <h4>Recolhimento de Equipamento</h4>
+                    <ol class="step-list">
+                        <li>O sistema gera automaticamente uma <strong>OS de Recolhimento</strong></li>
+                        <li>Agendar com cliente:
+                            <ul>
+                                <li>Devolução na recepção em 7 dias OU</li>
+                                <li>Retirada por técnico (agendar no sistema)</li>
+                            </ul>
+                        </li>
+                        <li>Inserir mensagem: "Agendado recolhimento para dd/mm período (manhã/tarde)"</li>
+                        <li>Selecionar <strong>Colaborador Responsável: A definir</strong></li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- 2ª Via de Boleto -->
+            <section id="segundavia">
+                <div class="section-title">
+                    <h2><i class="fas fa-barcode"></i> 2ª Via de Boleto</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-envelope"></i> Envio por E-mail/SMS</h3>
+                    
+                    <ol class="step-list">
+                        <li>Acessar <strong>Aba Financeiro</strong> no IXC</li>
+                        <li>Selecionar a fatura desejada</li>
+                        <li>Clicar em <strong>Imprimir Boletos</strong></li>
+                        <li>Selecionar <strong>SIM</strong> em "Excluir PDFs antigos"</li>
+                        <li>Escolher método de envio:
+                            <ul>
+                                <li><strong>E-mail</strong>: Preencher e confirmar</li>
+                                <li><strong>SMS</strong>: Selecionar opção correspondente</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <div class="info-card success">
+                        <h4><i class="fas fa-check-circle"></i> Confirmação</h4>
+                        <p>O sistema exibirá "Finalizou envio com sucesso!" após a operação.</p>
+                    </div>
+                    
+                    <h3><i class="fab fa-whatsapp"></i> Via WhatsApp (Malu)</h3>
+                    <ol class="step-list">
+                        <li>Cliente interage com Malu:
+                            <ul>
+                                <li>Opção 4 - Financeiro</li>
+                                <li>Opção 1 - Segunda via de boleto</li>
+                            </ul>
+                        </li>
+                        <li>Para múltiplas faturas: Malu oferece opção de escolha</li>
+                    </ol>
+                    
+                    <h3><i class="fas fa-headset"></i> Via OPA</h3>
+                    <ol class="step-list">
+                        <li>Clicar em <strong>Novo Atendimento</strong></li>
+                        <li>Selecionar departamento <strong>Financeiro</strong></li>
+                        <li>Digitar nome do cliente</li>
+                        <li>Após interação, selecionar <strong>/segundaViaCobrança</strong></li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Mudança de Titularidade -->
+            <section id="titularidade">
+                <div class="section-title">
+                    <h2><i class="fas fa-exchange-alt"></i> Mudança de Titularidade</h2>
+                </div>
+                
+                <div class="subsection">
+                    <h3><i class="fas fa-user-edit"></i> Requisitos</h3>
+                    <ul>
+                        <li>Contrato <strong>ATIVO</strong> e <strong>ADIMPLENTE</strong></li>
+                        <li>Fatura vencida: Cliente deve pagar e enviar comprovante</li>
+                        <li>Taxa: R$25</li>
+                    </ul>
+                    
+                    <div class="info-card warning">
+                        <h4><i class="fas fa-exclamation-triangle"></i> Documentação Necessária</h4>
+                        <p>
+                            <strong>Novo titular:</strong><br>
+                            - Selfie + documento de identificação<br>
+                            <strong>Antigo titular:</strong><br>
+                            - Documento de identificação
+                        </p>
+                    </div>
+                    
+                    <h3><i class="fas fa-paper-plane"></i> Envio de Documentos</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Canal</th>
+                                <th>Instruções</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>contato@conexaolinkes.com.br<br>Assunto: "MUDANÇA DE TITULARIDADE + NOME"</td>
+                            </tr>
+                            <tr>
+                                <td>WhatsApp</td>
+                                <td>(27) 4042-4240<br>Opção 2 - MUDANÇA DE ENDEREÇO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <h3><i class="fas fa-cogs"></i> Processamento</h3>
+                    <ol class="step-list">
+                        <li>Criar <strong>novo cadastro</strong> para o novo titular</li>
+                        <li>Gerar <strong>boleto avulso</strong> da 1ª mensalidade</li>
+                        <li>Registrar em <strong>ATENDIMENTO</strong>:
+                            <div class="code-block">
+                                Realizado alteração de titularidade.<br>
+                                Antigo titular: [Nome + ID]
+                            </div>
+                        </li>
+                        <li>Agendar técnico para <strong>nova configuração</strong> do roteador</li>
+                    </ol>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
